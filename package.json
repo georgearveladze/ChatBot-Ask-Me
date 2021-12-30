@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-telegram-bot-api": "^0.56.0",
+    "nodemon": "^1.19.4",
+    "pino": "^7.6.2"
+  },
+  "name": "georgebot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint  --fix"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.5.1"
+  }
+}
